@@ -6,7 +6,7 @@
 define('UNIQUE_KEY','thursday');
 define('ADMIN_IP', 'YOUR.IP.HERE'); // Replace with your IP
 define('TEMPLATE_DIR', __DIR__ . '/tmp/templates/');
-define('STRIKE_TIMEOUT', 30600);
+define('STRIKE_TIMEOUT', 86400);
 
 define('STRIKE_DIR', __DIR__ . '/tmp/honeypot-' . htmlspecialchars(UNIQUE_KEY));
 define('LOG_FILE', htmlspecialchars(STRIKE_DIR) . '/' . htmlspecialchars(UNIQUE_KEY).'-honeypot.log');
