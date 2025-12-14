@@ -6,9 +6,9 @@ Order allow,deny
 Deny from all
 
 # Deny access to the main honeypot log
-<Files "honeypot.log">
+<FilesMatch "honeypot\.log$">
     Require all denied
-</Files>
+</FilesMatch>
 
 # Deny access to all strike files (MD5 hash .txt files)
 <FilesMatch "^[0-9a-f]{32}\.txt$">
