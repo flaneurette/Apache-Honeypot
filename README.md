@@ -21,9 +21,10 @@ sudo apt install fail2ban
 sudo a2enmod rewrite
 
 # Create log file
-sudo touch /var/www/tmp/UNIQUE_KEY-honeypot/UNIQUE_KEY-honeypot.log
-sudo chown www-data:www-data /var/www/tmp/UNIQUE_KEY-honeypot/UNIQUE_KEY-honeypot.log
-sudo chmod 0700 -R /var/www/tmp/UNIQUE_KEY-honeypot/
+sudo touch /var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log
+sudo chown www-data:www-data /var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log
+sudo chown www-data:adm /var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log
+sudo chmod 0700 -R /var/www/tmp/honeypot-UNIQUE_KEY/
 ```
 
 Step 4: Next step is to create fail2ban filters for IP banning:
@@ -44,7 +45,7 @@ datepattern = {^LN-BEG}\[%%Y-%%m-%%d %%H:%%M:%%S\]
 ---
 
 In this file, be sure to edit:
-1. Path to log file:  /var/www/tmp/UNIQUE_KEY-honeypot/UNIQUE_KEY-honeypot.log
+1. Path to log file:  /var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log
 2. IP: Your IP
 3. Bantime, 86400 = ~24 hours.
 
