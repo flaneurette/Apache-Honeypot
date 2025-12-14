@@ -45,7 +45,7 @@ ignoreregex = Strike: [12] \|
 In this file, be sure to edit:
 1. Path to log file:  /var/www/tmp/UNIQUE_KEY-honeypot/UNIQUE_KEY-honeypot.log
 2. IP: Your IP
-3. Bantime, 30600 = ~24 hours.
+3. Bantime, 86400 = ~24 hours.
 
 > sudo nano /etc/fail2ban/jail.d/honeypot.conf
 ### `/etc/fail2ban/jail.d/honeypot.conf` (Fail2ban Jail)
