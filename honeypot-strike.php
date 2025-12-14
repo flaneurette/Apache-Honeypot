@@ -75,12 +75,9 @@ $log_entry = sprintf(
 if ($strikes === 1) {
     // Strike 1: Silent 404
     showSilent($ip, $path, $strikes);
-    exit();
-    
 } elseif ($strikes === 2) {
     // Strike 2: Warning page
     showWarning($ip, $path, $strikes);
-    
 } else {
     // Strike 3+: Ban page (Fail2ban will catch this)
     showBan($ip, $path, $strikes);
