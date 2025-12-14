@@ -23,6 +23,7 @@ sudo a2enmod rewrite
 # Create log file
 sudo touch /var/www/tmp/UNIQUE_KEY-honeypot/UNIQUE_KEY-honeypot.log
 sudo chown www-data:www-data /var/www/tmp/UNIQUE_KEY-honeypot/UNIQUE_KEY-honeypot.log
+sudo chmod 0700 -R /var/www/tmp/UNIQUE_KEY-honeypot/
 ```
 
 Step 4: Next step is to create fail2ban filters for IP banning:
