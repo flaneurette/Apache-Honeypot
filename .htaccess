@@ -4,7 +4,8 @@ RewriteBase /
 
 # ============= HONEYPOT PATTERNS =============
 # Only try to detect what you do NOT use!
-  
+# At the end, rename the PHP file: honeypot-strike.php to something unique, so that scanners cannot find or detect it!
+
 # WordPress & CMS Admin Panels
 RewriteCond %{REQUEST_URI} ^/(wp-admin|wp-includes|wp-content/plugins|wp-content/themes|wp-json|xmlrpc\.php|wp-login\.php|wp-config\.php|license\.txt)(/.*)?$ [NC,OR]
 
