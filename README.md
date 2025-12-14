@@ -36,12 +36,9 @@ Step 4: Next step is to create fail2ban filters for IP banning:
 # Fail2Ban filter for PHP honeypot strikes
 
 [Definition]
-
-# Match lines where strike is 3 or higher
-failregex = ^\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\] IP: <HOST> \| Strike: ([3-9]|\d{2,}) \|
-
-# Ignore lower strikes (1 or 2)
-ignoreregex = Strike: [12] \|
+failregex = ^ IP: <HOST> \| Strike: (?:[3-9]|\d{2,}) \|
+ignoreregex = 
+datepattern = {^LN-BEG}\[%%Y-%%m-%%d %%H:%%M:%%S\]
 ```
 
 ---
