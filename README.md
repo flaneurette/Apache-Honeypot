@@ -2,6 +2,9 @@
 A simple PHP/Apache Honeypot that blocks automated scanners on IP
 
 Step 1: Upload all files to your web-root folder, usually /www/
+> 1.1: Rename honeypot-strike.php to something unique.
+
+> 1.2: Edit the .htaccess in the root, and rename: honeypot-strike.php to something unique.
 
 Step 2: Modify the PHP file to add your preferences such as UNIQUE_KEY, and add your own IP.
 
