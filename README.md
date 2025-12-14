@@ -70,6 +70,7 @@ logtarget = /var/log/fail2ban-honeypot.log
 ```
 sudo systemctl restart apache2
 sudo systemctl restart fail2ban
+sudo fail2ban-client reload honeypot
 ```
 ### 6. Verify setup
 ```
