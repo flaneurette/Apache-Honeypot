@@ -54,14 +54,16 @@ In this file, be sure to edit:
 ```conf
 [honeypot]
 enabled = true
+backend = polling
 port = http,https
 filter = honeypot
-logpath = /var/www/tmp/UNIQUE_KEY-honeypot/UNIQUE_KEY-honeypot.log
+logpath = /var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log
 maxretry = 1
 findtime = 3600
 bantime = 86400
 action = iptables-multiport[name=honeypot, port="http,https", protocol=tcp]
 ignoreip = 127.0.0.1/8 ::1 YOUR.IP.HERE
+logtarget = /var/log/fail2ban-honeypot.log
 ```
 
 ### 5. Restart services
