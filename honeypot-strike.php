@@ -3,7 +3,7 @@
  * Honeypot Strike Handler
  */
 // Configuration
-define('UNIQUE_KEY','monday'); // MUST be set!
+define('UNIQUE_KEY','monday-is-the-best'); // A passphrase MUST be set!
 define('ADMIN_IP', '8.8.8.8'); // Replace with your IP
 define('TEMPLATE_DIR', __DIR__ . '/tmp/templates-'.UNIQUE_KEY);
 define('STRIKE_TIMEOUT', 30600);
