@@ -67,13 +67,38 @@ ignoreip = 127.0.0.1/8 ::1 YOUR.IP.HERE
 logtarget = /var/log/fail2ban-honeypot.log
 ```
 
-### 5. Restart services
+### 5. Log rotate
+
+```sudo nano /etc/logrotate.d/honeypot```
+
+Add this block (rememeber to replace your unique key!):
+
+```
+/var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log {
+    # Rotate logs daily
+    daily
+    # Keep 7 old logs
+    rotate 7
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 0640 www-data adm
+}
+```
+
+Test it:
+```
+sudo logrotate --force /etc/logrotate.d/honeypot
+```
+
+### 6. Restart services
 ```
 sudo systemctl restart apache2
 sudo systemctl restart fail2ban
 sudo fail2ban-client reload honeypot
 ```
-### 6. Verify setup
+### 7. Verify setup
 ```
 sudo fail2ban-client status honeypot
 ```
