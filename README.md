@@ -23,6 +23,14 @@ Step 2: Modify the PHP file to add your preferences such as UNIQUE_KEY, and add 
 
 Step 3:
 
+```
+sudo mkdir /var/www/tmp/templates-UNIQUE_KEY/
+sudo chown www-data:www-data /var/www/tmp/templates-UNIQUE_KEY/
+sudo chmod 0700 -R /var/www/tmp/templates-UNIQUE_KEY/
+```
+
+Upload the template files to the above folder.
+
 ```bash
 # Install required packages
 sudo apt update
