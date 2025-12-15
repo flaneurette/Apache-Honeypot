@@ -8,7 +8,7 @@ When a path, folder or file is entered or accessed (determined by rules in the r
 2. Second time: Warning of impending IP block
 3. Third time: IP Block.
 
-Usually scanner look for multiple files automatically, which triggers all 3 strikes, and the IP is blocked in IP Tables for a certain amount of time, default: 24hrs.
+> Usually a scanner searches for multiple files automatically, which triggers all 3 strikes, and the IP is blocked in IP Tables by Fail2ban for a certain amount of time, default: 24hrs.
 
 ### Installation
 
