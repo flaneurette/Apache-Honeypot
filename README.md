@@ -1,5 +1,14 @@
 # Apache-Honeypot
-A simple PHP/Apache Honeypot that blocks automated scanners on IP
+A simple PHP/Apache Honeypot that blocks automated scanners on IP.
+
+### How it works
+When a path, folder or file is entered or accessed on the folder (determined by rules in the root .htaccess), then a 3-strike system is triggered:
+
+1. First time: Silent 404
+2. Second time: Warning of impending IP block
+3. Third time: IP Block.
+
+Usually scanner look for multiple files automatically, which triggers all 3 strikes, and the IP is blocked in IP Tables for a certain amount of time, default: 24hrs.
 
 Step 1: Upload all files to your web-root folder, usually /www/
 > 1.1: Rename honeypot-strike.php to something unique.
