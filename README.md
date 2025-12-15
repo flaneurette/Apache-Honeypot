@@ -60,7 +60,7 @@ port = http,https
 filter = honeypot
 logpath = /var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log
 maxretry = 1
-findtime = 3600
+findtime = 86400
 bantime = 86400
 action = iptables-multiport[name=honeypot, port="http,https", protocol=tcp]
 ignoreip = 127.0.0.1/8 ::1 YOUR.IP.HERE
