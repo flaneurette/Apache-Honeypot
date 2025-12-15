@@ -19,7 +19,7 @@ Step 2: Modify the PHP file to add your preferences such as UNIQUE_KEY, and add 
 
 > UNIQUE_KEY is required, so that scanners cannot guess the location of the honeypot!
 
-> 2.1: Edit the .htaccess in the root, and rename: honeypot-strike.php to something unique. Then upload the .htaccess!
+> 2.1: Edit the .htaccess in the root, scroll to the end at the final rewrite rule, and rename: honeypot-strike.php to something unique. Then upload the .htaccess!
 
 Step 3:
 
