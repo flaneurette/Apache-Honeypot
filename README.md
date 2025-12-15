@@ -13,7 +13,7 @@ When a path, folder or file is entered or accessed (determined by rules in the r
 ### Installation
 
 Step 1: Upload /tmp/ and honeypot-strike.php to your web-root folder, usually /www/ (wait with the .htaccess)
-> 1.1: Rename honeypot-strike.php to something unique, so canners cannot find it. A UUID would be good.
+> 1.1: Rename honeypot-strike.php to something unique, so scanners cannot find it. A UUID would be good.
 
 Step 2: Modify the PHP file to add your preferences such as UNIQUE_KEY, and add your own IP.
 
