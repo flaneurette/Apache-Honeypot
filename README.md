@@ -10,6 +10,8 @@ When a path, folder or file is entered or accessed on the folder (determined by 
 
 Usually scanner look for multiple files automatically, which triggers all 3 strikes, and the IP is blocked in IP Tables for a certain amount of time, default: 24hrs.
 
+### Installation
+
 Step 1: Upload all files to your web-root folder, usually /www/
 > 1.1: Rename honeypot-strike.php to something unique.
 
