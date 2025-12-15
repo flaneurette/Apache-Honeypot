@@ -46,7 +46,7 @@ datepattern = {^LN-BEG}\[%%Y-%%m-%%d %%H:%%M:%%S\]
 
 In this file, be sure to edit:
 1. Path to log file:  /var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log
-2. IP: Your IP
+2. YOUR.IP.HERE: Your IP
 3. Bantime, 86400 = ~24 hours.
 
 > sudo nano /etc/fail2ban/jail.d/honeypot.conf
