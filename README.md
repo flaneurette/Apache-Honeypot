@@ -12,14 +12,14 @@ When a path, folder or file is entered or accessed (determined by rules in the r
 
 ### Installation
 
-Step 1: Upload all files to your web-root folder, usually /www/
-> 1.1: Rename honeypot-strike.php to something unique.
-
-> 1.2: Edit the .htaccess in the root, and rename: honeypot-strike.php to something unique.
+Step 1: Upload /tmp/ and honeypot-strike.php to your web-root folder, usually /www/ (wait with the .htaccess)
+> 1.1: Rename honeypot-strike.php to something unique, so canners cannot find it. A UUID would be good.
 
 Step 2: Modify the PHP file to add your preferences such as UNIQUE_KEY, and add your own IP.
 
 > UNIQUE_KEY is required, so that scanners cannot guess the location of the honeypot!
+
+> 2.1: Edit the .htaccess in the root, and rename: honeypot-strike.php to something unique. Then upload the .htaccess!
 
 Step 3:
 
