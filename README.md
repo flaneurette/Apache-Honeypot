@@ -2,7 +2,7 @@
 A simple PHP/Apache Honeypot that blocks automated scanners on IP.
 
 ### How it works
-When a path, folder or file is entered or accessed on the folder (determined by rules in the root .htaccess), then a 3-strike system is triggered:
+When a path, folder or file is entered or accessed (determined by rules in the root .htaccess), then a 3-strike system is triggered:
 
 1. First time: Silent 404
 2. Second time: Warning of impending IP block
