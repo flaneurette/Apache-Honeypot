@@ -71,7 +71,7 @@ logtarget = /var/log/fail2ban-honeypot.log
 
 ```sudo nano /etc/logrotate.d/honeypot```
 
-Add this block (rememeber to replace your unique key!):
+Add this block (remember to replace your unique key!):
 
 ```
 /var/www/tmp/honeypot-UNIQUE_KEY/UNIQUE_KEY-honeypot.log {
