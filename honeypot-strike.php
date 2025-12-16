@@ -5,7 +5,7 @@
 // Configuration
 define('UNIQUE_KEY','monday-is-the-best'); // A passphrase MUST be set!
 define('ADMIN_IP', '8.8.8.8'); // Replace with your IP
-define('TEMPLATE_DIR', __DIR__ . '/tmp/templates-'.UNIQUE_KEY);
+define('TEMPLATE_DIR', __DIR__ . '/tmp/templates-'.htmlspecialchars(UNIQUE_KEY));
 define('STRIKE_TIMEOUT', 30600);
 
 define('STRIKE_DIR', __DIR__ . '/tmp/honeypot-' . htmlspecialchars(UNIQUE_KEY));
@@ -21,8 +21,8 @@ if (!is_dir($unique_folder)) {
     mkdir($unique_folder, 0700, true);
 }
 
-if (!is_dir(TEMPLATE_DIR)) {
-    mkdir(TEMPLATE_DIR, 0700, true);
+if (!is_dir(htmlspecialchars(TEMPLATE_DIR))) {
+    mkdir(htmlspecialchars(TEMPLATE_DIR), 0700, true);
 }
 
 // Get client info
